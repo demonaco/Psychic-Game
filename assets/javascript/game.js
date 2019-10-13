@@ -1,7 +1,5 @@
-<script type="text/javascript">
-        {/* Below area we will be creating our variables */}
+                {/* Below area we will be creating our variables */}
         {/* Let's begin by creating an array data structure of letters from which the computer can choose it's random guess from /} */}
-        console.log("Hello!");
         
         var computersGuess = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
         
@@ -10,6 +8,7 @@
     var winsText = document.getElementById("wins")
     var lossesText = document.getElementById("Losses")
     var guessesText = document.getElementById("Guesses")
+    var guessesAray = ["", "", "", "", "", "", "", "", ""]
     {/* Let's keep track of letters that have been guessed */}
     var lettertext = document.getElementById("letters")
         {/* Let's run a function to get the guesses in */}
@@ -20,31 +19,27 @@
         // This portion of code should keep track of score
             if(usersGuess === computersGuess) {
              winsText++;
-            } else{
-                lossesText++;
+            } else {
+                guessesText++;
             }
-            // This code is used to display the letter that was guessed. the document.write method will display the guess next to the id of lettertext
-        if (event.key) {
-            document.write(letterText);
-
+            // this should clear the guesses number once it reaches 9
+            if(usersGuess = guessesAray.length){
+                guessesText.clear {
+                    lossesText++
+                }
+            }
+           
+     // This code is used to display the letter that was guessed. the document.write method will display the guess next to the id of lettertext
+     //This set of code should push our key guesses to the guesses aray as an item
+        function usersGuess(event.key) {
+       var displayLetter = guessesAray.push(letterText);
+            (displayLetter);
         }
-        if ("letterText" === 9){
-
+        if ("displayLetter" === 9){
             letterText.clear;
         }
-        else {
+    
 
         }
 
-        }
-
-
- 
-
-
-
-
        
-       
-       
-        </script>
